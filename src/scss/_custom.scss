@@ -1,0 +1,35 @@
+.custom {
+  padding: 75px 0;
+  @include bg("../images/custom-bg.jpg");
+  &__main-title {
+    text-align: center;
+    color: $color_white;
+    h2 {
+      font: 400 36px/43px $font_raleway;
+      letter-spacing: 2px;
+    }
+    .divider_white::after {
+      content: "";
+      display: block;
+      margin: 30px auto;
+    }
+
+    p {
+      font: 300 16px/24px $font_open_sans;
+      letter-spacing: 1px;
+    }
+    a {
+      display: block;
+      color: $color_white;
+      font: 500 15px/24px $font_open_sans;
+      border: 2px solid $color_white;
+      width: 150px;
+      padding: 9px 0;
+      margin: 35px auto 25px;
+    }
+  }
+  &__sub-ttl {
+    color: $color_text_form;
+    font: 400 16px/24px $font_open_sans;
+  }
+}

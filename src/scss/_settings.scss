@@ -1,0 +1,176 @@
+//  Foundation for Sites Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Card
+//  15. Close Button
+//  16. Drilldown
+//  17. Dropdown
+//  18. Dropdown Menu
+//  19. Flexbox Utilities
+//  20. Forms
+//  21. Label
+//  22. Media Object
+//  23. Menu
+//  24. Meter
+//  25. Off-canvas
+//  26. Orbit
+//  27. Pagination
+//  28. Progress Bar
+//  29. Prototype Arrow
+//  30. Prototype Border-Box
+//  31. Prototype Border-None
+//  32. Prototype Bordered
+//  33. Prototype Display
+//  34. Prototype Font-Styling
+//  35. Prototype List-Style-Type
+//  36. Prototype Overflow
+//  37. Prototype Position
+//  38. Prototype Rounded
+//  39. Prototype Separator
+//  40. Prototype Shadow
+//  41. Prototype Sizing
+//  42. Prototype Spacing
+//  43. Prototype Text-Decoration
+//  44. Prototype Text-Transformation
+//  45. Prototype Text-Utilities
+//  46. Responsive Embed
+//  47. Reveal
+//  48. Slider
+//  49. Switch
+//  50. Table
+//  51. Tabs
+//  52. Thumbnail
+//  53. Title Bar
+//  54. Tooltip
+//  55. Top Bar
+//  56. Xy Grid
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$font_open_sans: "Open Sans", sans-serif;
+$font_raleway: "Raleway", sans-serif;
+
+$color_white: #fff;
+$color_black: #000;
+$color_grey: #9a9a9a;
+$color_light_grey: #f5f5f5;
+$color_text_form: #bdbdbd;
+$color_title: #a7a7a7;
+$color_tab_brown: #333;
+$color_orange: #ff9b51;
+$color_orange_2: #ff8b38;
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: $font_open_sans;
+  color: $color_black;
+}
+.border_orange {
+  border-bottom: 5px solid $color_orange;
+}
+.divider_white::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: $color_white;
+  margin: 30px 0;
+}
+.divider_orange::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: $color_orange;
+  margin: 30px 0;
+}
+@mixin bg($image) {
+  background: {
+    image: url($image);
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+  }
+}
+
+@mixin field() {
+  display: inline;
+  padding: 10px 13px;
+  margin: 0 0 29px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $color_text_form;
+  box-shadow: none;
+  background-color: $color_white;
+  color: $color_text_form;
+  outline: none;
+
+  &::placeholder {
+    color: $color_text_form;
+    font: 300 1em/1.5em $font_open_sans;
+  }
+
+  &[type="password"]:focus,
+  &[type="text"]:focus,
+  &[type="email"]:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $color_text_form;
+    outline: none;
+    box-shadow: none;
+  }
+}
+@mixin message() {
+  resize: none;
+  padding: 10px 13px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $color_text_form;
+  box-shadow: none;
+  
+  @media (max-width: 1024px) {
+	margin: 0 auto;
+	max-width: 97%;
+  }
+
+  &::placeholder {
+    color: $color_text_form;
+    font: 300 1em/1.5em $font_open_sans;
+  }
+  &[type="message"]:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $color_text_form;
+    outline: none;
+    box-shadow: none;
+  }
+  &[rows] {
+    height: 175px;
+  }
+}

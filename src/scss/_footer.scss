@@ -1,0 +1,29 @@
+.footer {
+  padding: 23px 0 0;
+  background-color: $color_black;
+  text-align: center;
+  @media (max-width: 1024px) {
+    padding: 15px 0 0;
+  }
+
+  &__icons-blc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+
+    i {
+      color: #ccc;
+      width: 20px;
+      height: 20px;
+      font-size: 25px;
+    }
+  }
+
+  &__copyright {
+    color: $color_grey;
+    font: 300 12px/24px $font_open_sans;
+    letter-spacing: 1px;
+  }
+}

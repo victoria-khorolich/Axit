@@ -1,0 +1,83 @@
+.pricing {
+  background-color: $color_light_grey;
+  padding: 100px 0;
+
+  &__main-title {
+    text-align: center;
+    h2 {
+      font: 400 36px/43px $font_raleway;
+      letter-spacing: 2px;
+    }
+    .divider_orange::after {
+      content: "";
+      display: block;
+      margin: 30px auto;
+    }
+    p {
+      font: 400 14px/20px $font_open_sans;
+      color: #86878b;
+      margin-bottom: 75px;
+    }
+  }
+  &__items {
+    text-align: center;
+    align-items: flex-end;
+    @media (max-width: 639px) {
+      margin-bottom: 30px;
+    }
+    ul {
+      margin: 0;
+      transition: 1s;
+    }
+    &:hover ul{
+      box-shadow: 0 0 15px $color_grey;
+      transition: 1s;
+    }
+    li {
+      list-style-type: none;
+      padding: 10px 10px;
+
+      &:nth-child(1) {
+        background-color: $color_tab_brown;
+        border-bottom: 1px solid $color_light_grey;
+      }
+      &:nth-child(2) {
+        background-color: $color_tab_brown;
+      }
+      &:nth-child(3) {
+        background-color: $color_tab_brown;
+      }
+    }
+  }
+
+  &__title {
+    font: 700 20px/46px $font_open_sans;
+    color: $color_white;
+  }
+  &__currency {
+    font: 700 35px/24px $font_raleway;
+    color: $color_white;
+  }
+  &__price {
+    font: 700 94px/94px $font_raleway;
+    color: $color_white;
+  }
+
+  &__period {
+    font: 600 italic 14px/24px $font_open_sans;
+    color: $color_title;
+  }
+  &__most-pop {
+    background-color: $color_orange;
+    font: 700 14px/24px $font_open_sans;
+    color: $color_white;
+    text-transform: uppercase;
+  }
+  &__text-grey {
+    font: 400 14px/24px $font_open_sans;
+    color: $color_grey;
+    background-color: $color_white;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color_light_grey;
+  }
+}

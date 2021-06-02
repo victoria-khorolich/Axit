@@ -1,0 +1,63 @@
+.our-process {
+  padding: 127px 0;
+
+  &__main-title {
+    text-align: center;
+    h2 {
+      font: 400 36px/43px $font_raleway;
+      letter-spacing: 2px;
+    }
+    .divider_orange::after {
+      content: "";
+      display: block;
+      margin: 30px auto;
+    }
+
+    p {
+      font: 400 14px/20px $font_open_sans;
+      color: #86878b;
+    }
+  }
+  
+  &__icon-txt-blc {
+    text-align: center;
+    margin-top: 65px;
+    @media (max-width: 639px) {
+      margin-bottom: 0 0 50px 0;
+    }
+
+    h3 {
+      font: 700 20px/24px $font_open_sans;
+    }
+
+    p {
+      font: 400 14px/20px $font_open_sans;
+      color: #86878b;
+    }
+  }
+
+  &__icon{
+    display: block;
+    border-radius: 50%;
+    border: 2px solid $color_orange;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    margin: 0 auto 25px;
+  }
+  .far, .fas{
+      font-size: 32px;
+      color: $color_orange;
+      position: absolute;
+      top: 20px;
+    }
+    .fa-lightbulb{
+      left: 25px;
+    }
+    .fa-keyboard{
+      left: 18px;
+    }
+    .fa-bolt{
+      left: 27px;
+    }
+}

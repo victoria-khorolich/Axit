@@ -1,0 +1,65 @@
+.testimonials {
+  padding: 127px 0;
+ 
+  &__main-title {
+    text-align: center;
+    h2 {
+      font: 400 36px/43px $font_raleway;
+      letter-spacing: 2px;
+    }
+    .divider_orange::after {
+      content: "";
+        display: block;
+        margin: 30px auto;
+    }
+
+    p {
+      font: 400 14px/20px $font_open_sans;
+      color: $color_grey;
+    }
+  }
+  &__text{
+      background-color: $color_light_grey;
+      padding: 20px 5px 10px;
+      border-radius: 5px;
+      position: relative;
+      margin: 30px 0;
+      p{
+          font: 400 italic 14px/20px $font_open_sans;
+          color: $color_grey;
+      }
+
+      &::after{
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: $color_light_grey;
+          transform: rotate(45deg);
+          position: absolute;
+          left: 30px;
+          bottom: -10px;
+      }
+  }
+  &__name-blc{
+      padding-left: 100px;
+      position: relative;
+
+    img{
+      height: 80px;
+      position: absolute;
+      left: 0px;
+      bottom: -20px;
+    }
+  }
+
+  &__name{
+      font: 700 20px/20px $font_open_sans;
+      color: $color_black;
+  }
+  &__position{
+      font: 400 14px/20px $font_open_sans;
+      color: #86878b;
+      text-align: left;
+  }
+}

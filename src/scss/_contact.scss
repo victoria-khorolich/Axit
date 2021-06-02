@@ -1,0 +1,54 @@
+.contact {
+  padding: 114px 0;
+  background-color: $color_white;
+
+  &__main-title {
+    text-align: center;
+    color: $color_black;
+    h2 {
+      font: 400 36px/43px $font_raleway;
+      letter-spacing: 2px;
+    }
+    .divider_orange::after {
+      content: "";
+      display: block;
+      margin: 30px auto;
+    }
+
+    p {
+      font: 300 16px/24px $font_open_sans;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__form {
+    input {
+      @include field();
+    }
+    textarea {
+      @include message();
+    }
+    label {
+      &.error{
+        text-align: center;
+        color: $color_orange;
+      }
+    }
+  }
+  &__btn {
+    margin: 20px auto 0;
+  }
+  &__btn-send {
+    color: $color_white;
+    background-color: $color_orange;
+    font: 500 15px/24px $font_open_sans;
+    border-radius: 3px;
+    width: 165px;
+    padding: 12px 0px;
+    cursor: pointer;
+    
+    &:focus{
+      outline: none;
+    }
+  }
+}
