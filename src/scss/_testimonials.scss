@@ -1,11 +1,23 @@
 .testimonials {
-  padding: 127px 0;
+  padding: 127px 30px;
+
+  @include breakpoint(medium only) {
+    padding: 100px 30px;
+  }
+
+  @include breakpoint(small only) {
+    padding: 50px 20px;
+  }
  
   &__main-title {
     text-align: center;
     h2 {
       font: 400 36px/43px $font_raleway;
       letter-spacing: 2px;
+
+      @include breakpoint(small only) {
+        font-size: 28px;
+      }
     }
     .divider_orange::after {
       content: "";

@@ -2,11 +2,19 @@
   background-color: $color_light_grey;
   padding: 100px 0;
 
+  @include breakpoint(small only) {
+    padding: 50px 0px;
+  }
+
   &__main-title {
     text-align: center;
     h2 {
       font: 400 36px/43px $font_raleway;
       letter-spacing: 2px;
+      
+      @include breakpoint(small only) {
+        font-size: 28px;
+      }
     }
     .divider_orange::after {
       content: "";

@@ -10,8 +10,6 @@
     <link rel="icon" type="image/png" href="images/logo.png" data-csp="header-favicon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700|Raleway:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.css"> -->
-    <!-- <link href="css/animate.css"> -->
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -19,43 +17,41 @@
 
     <!--____________Navigation____________-->
     <section class="navigation" data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="0">
-            <div class="row align-justify align-middle">
-                <!--Лого-->
-                <div class="columns large-3 medium-3 small-10">
-                    <a href="#" class="logo">
-                        <span>
-                            <b>AX</b>it
-                        </span>
-
-                    </a>
-                </div>
-
-                <!--________________Mobile button_____________-->
-
-                <div class="title-bar small-2" data-responsive-toggle="example-menu" data-hide-for="medium">
-                    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-                </div>
-
-                <!--______________________Menu____________________-->
-
-                <div id="example-menu" class="columns large-9 medium-9 small-12 align-middle">
-                    <ul class="vertical medium-horizontal menu align-right" data-smooth-scroll
-                        data-animation-duration="1200">
-                        <li><a href="#features-1">Features</a></li>
-                        <li><a href="#our-process">About</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="row align-justify align-middle">
+            <!--Лого-->
+            <div class="columns large-3 medium-3 small-9">
+                <a href="#" class="logo">
+                    <span>
+                        <b>AX</b>it
+                    </span>
+    
+                </a>
+            </div>
+    
+            <!--________________Mobile button_____________-->
+    
+            <div class="title-bar small-3" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            </div>
+    
+            <!--______________________Menu____________________-->
+    
+            <div id="example-menu" class="columns large-9 medium-9 small-12 align-middle">
+                <ul class="vertical medium-horizontal menu align-right" data-smooth-scroll data-animation-duration="1200">
+                    <li><a href="#features-1">Features</a></li>
+                    <li><a href="#our-process">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </section>
+
     <!--____________Header____________-->
     <section class="header" id="header">
         <div class="row align-justify">
-            <div class="columns large-7 medium-6 small-10 header__content">
+            <div class="columns large-7 medium-6 small-12 header__content">
                 <h1><b>AX</b>it</h1>
                 <h2 class="divider_white">Modern axure template for beautiful prototypes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sunt 
@@ -65,37 +61,28 @@
                 
             </div>   
                 
-            <div class="columns large-4 medium-5 small-10 header__form">
+            <div class="columns large-4 medium-5 small-12 header__form">
                 <form class="contact-us-form" id="formContactFooter" method="post" action="" novalidate="novalidate">
-                    <div class="row align-center">
-                        <div class="columns large-12 medium-12 small-12 header__form-title">
-                            <h2>Try Your <b>Free</b> Trial Today</h2>
-                            <p id="formMessage" data-csp="main-success-message" style="font-size: 22px;
-                                font-weight: 600; font-family:'Open Sans', sans-serif;"></p>
-                        </div>
-                        <div class="columns large-11 medium-12 small-12 header__form-column">
-                            <label for="name" generated="true" class="error"></label>
-                            <input class="input-form" minlength="3" id="name" name="name" type="text"
-                                placeholder="Name" required="">
-                        </div>
-                        <div class="columns large-11 medium-12 small-12 header__form-column">
-                            <label for="email" generated="true" class="error"></label>
-                            <input class="input-form" id="email" name="email" type="email"
-                                placeholder="Email" required="">
-                        </div>
-                        <div class=" columns large-11 medium-12 small-12 header__form-column">
-                            <label for="password" generated="true" class="error"></label>
-                            <input class="input-form" id="password" name="password" type="password"
-                                placeholder="Password">
-                        </div>
-                        <div class="columns large-12 medium-12 small-12 header__button-send" id="btn">
-                            <button>Get Started</button>
-                        </div>
+                    <div class="header__form-title">
+                        <h2>Try Your <b>Free</b> Trial Today</h2>
+                    </div>
+                    <div class="header__form-column">
+                        <input class="input-form" minlength="3" id="name" name="name" type="text" placeholder="Name" required="">
+                    </div>
+                    <div class="header__form-column">
+                        <input class="input-form" id="email" name="email" type="email" placeholder="Email" required="">
+                    </div>
+                    <div class="header__form-column">
+                        <input class="input-form" id="password" name="password" type="password" placeholder="Password">
+                    </div>
+                    <div class="header__button-send" id="btn">
+                        <button>Get Started</button>
                     </div>
                 </form>
             </div>  
         </div>
     </section>
+
     <!--____________Brand-bar____________-->
     <section class="brand-bar">
         <div class="row align-center">
@@ -115,6 +102,7 @@
             </div>
         </div>
     </section>
+
     <!--____________Features-1____________-->
     <section class="features-1" id="features-1">
         <div class="row align-center">
@@ -125,43 +113,33 @@
                     <li class="features-1__tab features-1__tab--three js-tab-trigger" data-tab="3"><span>Tab 3</span></li>
                 </ul>
             </div>
-            <div class="columns large-7 medium-8 small-8 features-1__content">
+            <div class="columns large-7 medium-8 small-9 features-1__content">
                 <div class="features-1__content-wrapper active js-tab-content" data-tab="1">
                     <h3>Tabs with soft transitioning effect.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. </p>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes.
                     </p>
                     <a href="#" class="features-1__link">Download</a>
                 </div>
                 <div class="features-1__content-wrapper js-tab-content" data-tab="2">
                     <h3>Tabs with soft transitioning effect2.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.</p>
+                    <p>Proin gravida dolor sit amet lacus accumsan et viverra
+                        justo commodo. </p>
+                    <p>elit. Aenean euismod bibendum laoreet.
                     </p>
                     <a href="#" class="features-1__link">Download</a>
-                </div> 
+                </div>
                 <div class="features-1__content-wrapper js-tab-content" data-tab="3">
                     <h3>Tabs with soft transitioning effect3.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.</p>
+                    <p>Consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Cum sociis natoque
+                        penatibus et magnis dis parturient montes.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                     </p>
                     <a href="#" class="features-1__link">Download</a>
-                </div>   
+                </div>
             </div>
             <div class="columns large-3 medium-12 small-12 features-1__img">
                 <img src="./images/image_right_u255.png" alt="image1">
@@ -171,10 +149,10 @@
     <!--____________Features-2____________-->
     <section class="features-2">
         <div class="row align-justify">
-            <div class="columns large-5 medium-11 small-11 features-2__img">
+            <div class="columns large-5 medium-12 small-12 features-2__img">
                 <img src="./images/features-2.jpg" alt="">
             </div>
-            <div class="columns large-5 medium-11 small-11 features-2__content">
+            <div class="columns large-5 medium-12 small-12 features-2__content">
                 <h2 class="divider_orange">Sub list section</h2>
                     <span class="features-2__divider"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
@@ -208,7 +186,7 @@
     <!--____________Features-3____________-->
     <section class="features-3">
         <div class="row align-justify">
-            <div class="columns large-5 medium-11 small-11 features-3__content">
+            <div class="columns large-5 medium-12 small-12 features-3__content">
                 <h2 class="divider_orange">Standard Picture Section</h2>
                     <span class="features-3__divider"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
@@ -220,7 +198,7 @@
                         euismod bibendum laoreet.
                     </p>
             </div>
-            <div class="columns large-5 medium-11 small-11 features-3__img">
+            <div class="columns large-5 medium-12 small-12 features-3__img">
                 <img src="./images/features-3.jpg" alt="">
             </div>
         </div>
@@ -228,7 +206,7 @@
     <!--____________Our Process____________-->
     <section class="our-process" id="our-process">
         <div class="row align-center">
-            <div class="columns large-5 medium-11 small-11 our-process__main-title">
+            <div class="columns large-5 medium-12 small-12 our-process__main-title">
                 <h2 class="divider_orange">WHY THIS IS AWESOME</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
@@ -277,7 +255,7 @@
     <!--____________Pricing____________-->
     <section class="pricing" id="pricing">
         <div class="row align-center">
-            <div class="columns large-5 medium-11 small-11 pricing__main-title">
+            <div class="columns large-5 medium-12 small-12 pricing__main-title">
                 <h2 class="divider_orange">PRICING OPTIONS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -435,7 +413,7 @@
                                 placeholder="Message" required=""></textarea>
                         </div>
 
-                        <div class="columns large-2 medium-5 small-5 contact__btn" id="btncontact">
+                        <div class="columns large-2 medium-5 small-12 contact__btn" id="btncontact">
                            <button class="contact__btn-send">Send Message</button>
                         </div>
 
@@ -447,7 +425,7 @@
     <!--____________Footer____________-->
     <section class="footer" id="footer">
         <div class="row align-center">
-            <div class="columns large-4 medium-5 small-8 footer__icons-blc">
+            <div class="columns large-4 medium-5 small-12 footer__icons-blc">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
