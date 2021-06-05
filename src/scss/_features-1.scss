@@ -1,13 +1,20 @@
 .features-1 {
   background-color: $color_light_grey;
-  padding: 165px 0 160px;
-  @media (max-width: 1024px) {
-    padding: 100px 0;
+  padding: 165px 30px 160px;
+
+  @include breakpoint(medium only) {
+    padding: 100px 30px;
+  }
+  @include breakpoint(small only) {
+    padding: 50px 20px;
   }
 
   &__tabs {
     display: flex;
     flex-direction: column;
+  }
+  ul{
+    margin: 0;
   }
   &__tab {
     align-items: center;
@@ -20,6 +27,11 @@
     border-radius: 2px;
     position: relative;
     cursor: pointer;
+    list-style-type: none;
+
+    @include breakpoint(small only) {
+      width: 100%;
+    }
 
     &--two {
       margin: 1px 0;
@@ -31,16 +43,27 @@
       top: 46px;
       left: 35px;
       text-align: center;
+
+      @include breakpoint(small only) {
+        left: 0;
+        right: 0;
+      }
     }
   }
+
   &__tab.active{
     background-color: $color_orange_2;
   }
+  
   &__content-wrapper {
     display: none;
     padding: 0 100px 0 30px;
-    @media (max-width: 1024px) {
+    
+    @include breakpoint(medium only){
       padding: 0 0 0 40px;
+    }
+    @include breakpoint(small only){
+      padding: 0 0 0 10px;
     }
     h3 {
       font: 700 20px/24px $font_open_sans;

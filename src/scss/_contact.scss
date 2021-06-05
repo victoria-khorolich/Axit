@@ -1,6 +1,14 @@
 .contact {
-  padding: 114px 0;
+  padding: 114px 30px;
   background-color: $color_white;
+
+  @include breakpoint(medium only) {
+    padding: 100px 30px;
+  }
+
+  @include breakpoint(small only) {
+    padding: 50px 20px;
+  }
 
   &__main-title {
     text-align: center;
@@ -8,6 +16,10 @@
     h2 {
       font: 400 36px/43px $font_raleway;
       letter-spacing: 2px;
+
+      @include breakpoint(small only) {
+        font-size: 28px;
+      }
     }
     .divider_orange::after {
       content: "";
@@ -36,7 +48,7 @@
     }
   }
   &__btn {
-    margin: 20px auto 0;
+    margin: 50px auto 0;
   }
   &__btn-send {
     color: $color_white;
@@ -46,6 +58,8 @@
     width: 165px;
     padding: 12px 0px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
     
     &:focus{
       outline: none;
